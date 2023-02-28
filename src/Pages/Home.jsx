@@ -46,7 +46,7 @@ const Home = () => {
         setLoading={setLoading}
         suggestions={suggestions}
       />
-      <HomePageService scrollNav={scrollNav}  />
+      {/*<HomePageService scrollNav={scrollNav}  />*/}
       <LargeWithAppLinksAndSocial />
     </Box>
   );

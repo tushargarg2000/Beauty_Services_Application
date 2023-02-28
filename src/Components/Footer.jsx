@@ -28,7 +28,7 @@ const ListHeader = ({ children }) => {
 const SocialButton = ({ children, label, href }) => {
   return (
     <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+      bg={useColorModeValue("blackAlpha.100", "blackAlpha.100")}
       rounded={"full"}
       w={8}
       h={8}
@@ -40,7 +40,7 @@ const SocialButton = ({ children, label, href }) => {
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+        bg: useColorModeValue("blackAlpha.200", "blackAlpha.200"),
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
@@ -55,51 +55,51 @@ export default function LargeWithAppLinksAndSocial() {
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
       color={"whiteAlpha.900"}
-      bg={"blackAlpha.900"}
+      bg={"whiteAlpha.900"}
     >
       <Container
         color={"whiteAlpha.900"}
-        bg={"blackAlpha.900"}
+        bg={"whiteAlpha.900"}
         as={Stack}
         maxW={"6xl"}
         py={10}
       >
-        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
-          <Stack align={"flex-start"}>
-            <ListHeader>Company</ListHeader>
-            <Link href={"#"}>About Us</Link>
-            <Link href={"#"}>Blog</Link>
-            <Link href={"#"}>Careers</Link>
-            <Link href={"#"}>Contact Us</Link>
-          </Stack>
+        {/*<SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>*/}
+        {/*  <Stack align={"flex-start"}>*/}
+        {/*    <ListHeader>Company</ListHeader>*/}
+        {/*    <Link href={"#"}>About Us</Link>*/}
+        {/*    <Link href={"#"}>Blog</Link>*/}
+        {/*    <Link href={"#"}>Careers</Link>*/}
+        {/*    <Link href={"#"}>Contact Us</Link>*/}
+        {/*  </Stack>*/}
 
-          <Stack align={"flex-start"}>
-            <ListHeader>Support</ListHeader>
-            <Link href={"#"}>Help Center</Link>
-            <Link href={"#"}>Safety Center</Link>
-            <Link href={"#"}>Community Guidelines</Link>
-          </Stack>
+        {/*  <Stack align={"flex-start"}>*/}
+        {/*    <ListHeader>Support</ListHeader>*/}
+        {/*    <Link href={"#"}>Help Center</Link>*/}
+        {/*    <Link href={"#"}>Safety Center</Link>*/}
+        {/*    <Link href={"#"}>Community Guidelines</Link>*/}
+        {/*  </Stack>*/}
 
-          <Stack align={"flex-start"}>
-            <ListHeader>Legal</ListHeader>
-            <Link href={"#"}>Cookies Policy</Link>
-            <Link href={"#"}>Privacy Policy</Link>
-            <Link href={"#"}>Terms of Service</Link>
-            <Link href={"#"}>Law Enforcement</Link>
-          </Stack>
+        {/*  <Stack align={"flex-start"}>*/}
+        {/*    <ListHeader>Legal</ListHeader>*/}
+        {/*    <Link href={"#"}>Cookies Policy</Link>*/}
+        {/*    <Link href={"#"}>Privacy Policy</Link>*/}
+        {/*    <Link href={"#"}>Terms of Service</Link>*/}
+        {/*    <Link href={"#"}>Law Enforcement</Link>*/}
+        {/*  </Stack>*/}
 
-          <Stack align={"flex-start"}>
-            <ListHeader>Install App</ListHeader>
-            {/* <AppStoreBadge /> */}
-            <a href="https://play.google.com/store/search?q=urban+company&c=apps&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-              <img
-                alt="Get it on Google Play"
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-              />
-            </a>
-            {/* <PlayStoreBadge /> */}
-          </Stack>
-        </SimpleGrid>
+        {/*  <Stack align={"flex-start"}>*/}
+        {/*    <ListHeader>Install App</ListHeader>*/}
+        {/*    /!* <AppStoreBadge /> *!/*/}
+        {/*    <a href="https://play.google.com/store/search?q=urban+company&c=apps&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">*/}
+        {/*      <img*/}
+        {/*        alt="Get it on Google Play"*/}
+        {/*        src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"*/}
+        {/*      />*/}
+        {/*    </a>*/}
+        {/*    /!* <PlayStoreBadge /> *!/*/}
+        {/*  </Stack>*/}
+        {/*</SimpleGrid>*/}
       </Container>
 
       <Box
@@ -116,18 +116,20 @@ export default function LargeWithAppLinksAndSocial() {
           justify={{ md: "space-between" }}
           align={{ md: "center" }}
         >
-          <Text>© 2022 Urban Company. All rights reserved</Text>
-          <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"#"}>
+          {/*<Text>© 2022 Urban Company. All rights reserved</Text>*/}
+          <div className="center-div">
+          <Stack direction={"row"} spacing={6} style={{ margin: "0 auto" }} >
+            <SocialButton label={"Twitter"} href={"https://twitter.com/myntra"}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={"YouTube"} href={"#"}>
+            <SocialButton label={"YouTube"} href={"https://youtube.com/@myntra"}>
               <FaYoutube />
             </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
+            <SocialButton label={"Instagram"} href={"https://instagram.com/myntra?igshid=YmMyMTA2M2Y="}>
               <FaInstagram />
             </SocialButton>
           </Stack>
+          </div>
         </Container>
       </Box>
     </Box>

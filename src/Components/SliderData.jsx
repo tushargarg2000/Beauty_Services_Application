@@ -1,0 +1,22 @@
+export const SliderData = [
+    {
+        image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQElN9pkfM4B3YFyQz4-jmVLV0kVavTy8FEEQ&usqp=CAU'
+    },
+    {
+        image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqUs5EVUtwyvb6ol0qoCqQEP5jEab9FtzlpQ&usqp=CAU'
+    },
+    {
+        image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyYlQh4LYvysx-vOREzx3XeoEqteYQtuslAQ&usqp=CAU'
+    },
+    {
+        image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp2YMiESgpQ-UmvXdG_6lN4kkzE_0wiM6gEg&usqp=CAU'
+    },
+    {
+        image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3mdlsppWtcGlZ6lsK-4yEHfJkaNgXG3fcKA&usqp=CAU'
+    }
+];

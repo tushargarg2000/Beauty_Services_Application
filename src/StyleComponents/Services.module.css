@@ -10,6 +10,13 @@
   height: 80px;
   /* border: 2px solid #282c34; */
 }
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #img{
   width: 45%;
   height: 50px;

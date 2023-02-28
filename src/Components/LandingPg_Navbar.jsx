@@ -1,5 +1,6 @@
 import React from "react";
 
+
 // const Navbar = () => {
 //   return <div>Navbar</div>;
 // };
@@ -48,17 +49,23 @@ export default function LandingPage_Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const Links = [
-    { title: "Blog", link: "/blog" },
-    { title: "Register as Proffessional", link: "/" },
-    { title: "My Bookings", link: "/bookings" },
+    { title: "MEN", link: "/blog" },
+    { title: "WOMEN", link: "/" },
+    { title: "KIDS", link: "/bookings" },
+    { title: "HOME", link: "/blog" },
+    { title: "BEAUTY", link: "/" },
+    { title: "STUDIO", link: "/bookings" },
+    { title: "PROILE", link: "/" },
+    { title: "WISHLIST", link: "/bookings" },
+    { title: "BAG", link: "/bookings" },
   ];
 
   return (
     <>
       <Box
         // bg={useColorModeValue("blackAlpha.100", "blackAlpha.900")}
-        bg={"blackAlpha.900"}
-        color={"whiteAlpha.900"}
+        bg={"whiteAlpha.900"}
+        color={"blackAlpha.900"}
         px={4}
         // paddingRight={"250px"}
         // marginRight={"20"}
@@ -87,7 +94,7 @@ export default function LandingPage_Navbar() {
             <Box>
               <Go to={`/${localStorage.getItem("location")}`}>
                 <Image
-                  src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png"
+                  src="https://www.freepnglogos.com/uploads/logo-myntra-png/myntra-logo-m-png-3.png"
                   width={"30%"}
                 />
               </Go>
